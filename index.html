@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form action="#" id="form">
+        <div class="txtbox">
+        <label>username</label>
+        <input type="text" name="username" id="username"/>
+        </div>
+        <div class="radiosubject">
+            <input type="radio" id="tamil"/>
+            <label for="tamil">Tamil</label>
+            <input type="radio" id="english"/>
+            <label for="english">English</label>
+            <input type="radio" id="science"/>
+            <label for="science">Science</label>
+            <input type="radio" id="maths"/>
+            <label for="maths">Maths</label>
+            <input type="radio" id="social"/>
+            <label for="social">Social</label>
+        </div>
+        <div class="checksubject">
+            <input type="checkbox" name="tamil" id="checktamil"/>
+            <label for="tamil">Tamil</label>
+            <input type="checkbox" name="english" id="checkenglish"/>
+            <label for="english">English</label>
+            <input type="checkbox" name="science" id="checkscience"/>
+            <label for="science">Science</label>
+            <input type="checkbox" name="maths" id="checkmaths"/>
+            <label for="maths">Maths</label>
+            <input type="checkbox" name="social" id="checksocial"/>
+            <label for="social">Social</label>
+        </div>
+        <div class="select">
+            <select name="selectsubjects" id="selectsubjects">
+                <option value="">Select subject</option>
+                <option value="tamil">Tamil</option>
+                <option value="english">English</option>
+                <option value="science">Science</option>
+                <option value="maths">Maths</option>
+                <option value="social">Social</option>
+            </select>
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+    <p id="output"></p>
+    <script>
+    // const inputText = document.querySelector("#username");
+    //     let output = document.querySelector("#output");
+    //     inputText.addEventListener("change", function (e) { 
+    //         e.preventDefault();
+    //         output.textContent = this.value;
+    //     });
+
+// const inputText = document.querySelector("#username");
+//         let output = document.querySelector("#output");
+//         inputText.addEventListener("change", (e) => {
+//             e.preventDefault();
+//             output.textContent = inputText.value;
+//         });
+// let output = document.querySelector("#output");
+// let radio = document.querySelector(".radiosubject");
+// radio.addEventListener("change", function (e) {
+//     e.preventDefault();
+//     let target = e.target;
+//     let message;
+//     switch (target.id) {
+//         case "tamil":
+//             message = "you selected tamil"
+//             break;
+    
+//             case "english":
+//             message = "you selected english"
+//             break;
+    
+//             case "science":
+//             message = "you selected science"
+//             break;
+    
+//             case "maths":
+//             message = "you selected maths"
+//             break;
+    
+//             case "social":
+//             message = "you selected social"
+//             break;
+    
+//         default:
+//             message = "not selected any subject"
+//             break;
+//     }
+//     output.textContent = message;
+// });
+// const output = document.querySelector("#output");
+// const checkSubject = document.querySelector(".checksubject");
+// checkSubject.addEventListener("change", function (e) {
+//     e.preventDefault();
+//     let target = e.target;
+//     let message;
+//     switch (target.id) {
+//         case "checktamil":
+//             message = "you selected tamil"
+//             break;
+    
+//             case "checkenglish":
+//             message = "you selected english"
+//             break;
+    
+//             case "checkscience":
+//             message = "you selected science"
+//             break;
+    
+//             case "checkmaths":
+//             message = "you selected maths"
+//             break;
+    
+//             case "checksocial":
+//             message = "you selected social"
+//             break;
+    
+//         default:
+//             message = "you not selected anything"
+//             break;
+//     }
+//     output.textContent = message;
+// });
+const output = document.querySelector("#output");
+const selectsubjects = document.querySelector("#selectsubjects");
+selectsubjects.addEventListener("change", function (e){
+e.preventDefault();
+output.textContent= selectsubjects.value;
+});
+
+</script>
+</body>
+</html>
